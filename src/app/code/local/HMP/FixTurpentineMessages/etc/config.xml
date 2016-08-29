@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <HMP_FixTurpentineMessages>
+            <version>0.1.0</version>
+        </HMP_FixTurpentineMessages>
+    </modules>
+    <global>
+         <blocks>
+            <fixturpentinemessages>
+                <class>HMP_FixTurpentineMessages_Block</class>
+            </fixturpentinemessages>
+            <turpentine>
+                <rewrite>
+                    <core_messages>HMP_FixTurpentineMessages_Block_Core_Messages</core_messages>
+                </rewrite>
+            </turpentine>
+        </blocks>
+        <models>
+            <fixturpentinemessages>
+                <class>HMP_FixTurpentineMessages_Model</class>
+            </fixturpentinemessages>
+            <turpentine>
+                <rewrite>
+                    <observer_esi>HMP_FixTurpentineMessages_Model_Observer_Esi</observer_esi>
+                </rewrite>
+            </turpentine>
+        </models>
+    </global>
+</config>
